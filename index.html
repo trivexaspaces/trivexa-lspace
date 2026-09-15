@@ -1,1 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
+<title>TRIVEXA SPACES | Premium Interior Execution</title>
+
+<meta name="description" content="TRIVEXA SPACES — Premium interior execution, modular installation and turnkey interior solutions in Hyderabad.">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#080808;
+  color:#fff;
+  line-height:1.6
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.wrap{
+  width:min(1180px,92%);
+  margin:auto
+}
+
+/* HEADER */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:100;
+  background:rgba(5,5,5,.85);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #292929
+}
+
+.nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+
+.logo{
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:4px
+}
+
+.logo span{
+  color:#c9a45c
+}
+
+nav{
+  display:flex;
+  gap:28px
+}
+
+nav a{
+  font-size:13px;
+  color:#ddd;
+  transition:.3s
+}
+
+nav a:hover{
+  color:#c9a45c
+}
+
+.navbtn{
+  background:#c9a45c;
+  color:#111;
+  padding:11px 19px;
+  border-radius:3px;
+  font-size:12px;
+  font-weight:800
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,.92),
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.25)
+  ),
+  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=90")
+  center/cover;
+}
+
+.hero-content{
+  max-width:760px;
+  padding-top:80px
+}
+
+.label{
+  color:#c9a45c;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:12px;
+  font-weight:bold
+}
+
+.hero h1{
+  font-size:clamp(48px,7vw,90px);
+  line-height:.98;
+  letter-spacing:-4px;
+  margin:20px 0 25px
+}
+
+.hero h1 span{
+  color:#c9a45c
+}
+
+.hero p{
+  max-width:650px;
+  color:#ddd;
+  font-size:18px;
+  margin-bottom:32px
+}
+
+.buttons{
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 24px;
+  font-size:13px;
+  font-weight:800;
+  border-radius:3px
+}
+
+.gold{
+  background:#c9a45c;
+  color:#111
+}
+
+.border{
+  border:1px solid #888
+}
+
+/* SECTIONS */
+
+section{
+  padding:100px 0
+}
+
+.dark{
+  background:#101010
+}
+
+.section-title{
+  max-width:720px;
+  margin-bottom:48px
+}
+
+.section-title h2{
+  font-size:46px;
+  line-height:1.1;
+  margin:10px 0 15px
+}
+
+.section-title p{
+  color:#999
+}
+
+/* ABOUT */
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center
+}
+
+.about-image{
+  min-height:520px;
+
+  background:
+  url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=90")
+  center/cover
+}
+
+.about-content h3{
+  font-size:35px;
+  line-height:1.15;
+  margin:10px 0 18px
+}
+
+.about-content p{
+  color:#aaa;
+  margin-bottom:16px
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin-top:30px
+}
+
+.stat{
+  border-top:1px solid #444;
+  padding-top:15px
+}
+
+.stat strong{
+  display:block;
+  color:#c9a45c;
+  font-size:30px
+}
+
+.stat small{
+  color:#888
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px
+}
+
+.service{
+  background:#111;
+  border:1px solid #292929;
+  padding:32px;
+  min-height:215px;
+  transition:.35s
+}
+
+.service:hover{
+  transform:translateY(-7px);
+  border-color:#c9a45c
+}
+
+.icon{
+  font-size:29px;
+  color:#c9a45c;
+  margin-bottom:17px
+}
+
+.service h3{
+  font-size:20px;
+  margin-bottom:9px
+}
+
+.service p{
+  color:#888;
+  font-size:14px
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:12px
+}
+
+.project{
+  height:310px;
+  overflow:hidden
+}
+
+.project img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.6s
+}
+
+.project:hover img{
+  transform:scale(1.07)
+}
+
+.large{
+  grid-column:span 7
+}
+
+.small{
+  grid-column:span 5
+}
+
+/* PROCESS */
+
+.process{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px
+}
+
+.step{
+  background:#111;
+  padding:30px;
+  border-top:2px solid #c9a45c
+}
+
+.number{
+  color:#c9a45c;
+  font-size:11px;
+  letter-spacing:2px
+}
+
+.step h3{
+  margin:14px 0 8px
+}
+
+.step p{
+  color:#888;
+  font-size:13px
+}
+
+/* CTA */
+
+.cta{
+  text-align:center;
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,.9),
+    rgba(0,0,0,.55)
+  ),
+  url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=90")
+  center/cover;
+}
+
+.cta h2{
+  font-size:54px;
+  margin-bottom:12px
+}
+
+.cta p{
+  max-width:650px;
+  margin:0 auto 30px;
+  color:#ddd
+}
+
+/* CONTACT */
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px
+}
+
+.contact h2{
+  font-size:43px;
+  margin:10px 0 14px
+}
+
+.muted{
+  color:#999
+}
+
+.info{
+  padding:16px 0;
+  border-bottom:1px solid #292929
+}
+
+.info span{
+  display:block;
+  color:#777;
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase
+}
+
+.info strong{
+  font-size:16px
+}
+
+/* FORM */
+
+.form{
+  background:#151515;
+  border:1px solid #2c2c2c;
+  padding:32px
+}
+
+.form h3{
+  font-size:25px;
+  margin-bottom:20px
+}
+
+input,
+textarea{
+  width:100%;
+  background:#0c0c0c;
+  color:white;
+  border:1px solid #333;
+  padding:15px;
+  margin-bottom:13px;
+  outline:none
+}
+
+input:focus,
+textarea:focus{
+  border-color:#c9a45c
+}
+
+textarea{
+  height:130px;
+  resize:none
+}
+
+button{
+  width:100%;
+  padding:15px;
+  background:#c9a45c;
+  border:0;
+  font-weight:900;
+  cursor:pointer
+}
+
+/* FOOTER */
+
+footer{
+  padding:30px 0;
+  background:#050505;
+  border-top:1px solid #222
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px
+}
+
+.footer p{
+  color:#777;
+  font-size:12px
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25d366;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  z-index:200;
+  box-shadow:0 8px 25px #0008
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  nav{
+    display:none
+  }
+
+  .about,
+  .contact{
+    grid-template-columns:1fr
+  }
+
+  .services{
+    grid-template-columns:1fr 1fr
+  }
+
+  .process{
+    grid-template-columns:1fr 1fr
+  }
+
+  .large,
+  .small{
+    grid-column:span 12
+  }
+
+}
+
+@media(max-width:550px){
+
+  section{
+    padding:70px 0
+  }
+
+  .hero h1{
+    font-size:47px
+  }
+
+  .hero p{
+    font-size:16px
+  }
+
+  .services,
+  .process,
+  .stats{
+    grid-template-columns:1fr
+  }
+
+  .about-image{
+    min-height:360px
+  }
+
+  .section-title h2,
+  .cta h2{
+    font-size:37px
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="wrap nav">
+
+<a href="#" class="logo">
+TRIVEXA <span>SPACES</span>
+</a>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<a class="navbtn"
+href="https://wa.me/918123212285">
+LET'S TALK
+</a>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="wrap">
+
+<div class="hero-content">
+
+<div class="label">
+Interior Execution • Modular • Turnkey
+</div>
+
+<h1>
+Spaces Designed<br>
+to <span>Live Beautifully.</span>
+</h1>
+
+<p>
+Premium interior execution and modular installation solutions for residential spaces — delivered with professional coordination, quality workmanship and attention to detail.
+</p>
+
+<div class="buttons">
+
+<a class="btn gold" href="#portfolio">
+VIEW OUR WORK
+</a>
+
+<a class="btn border"
+href="https://wa.me/918123212285">
+WHATSAPP US
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="dark">
+
+<div class="wrap">
+
+<div class="about">
+
+<div class="about-image"></div>
+
+<div class="about-content">
+
+<div class="label">
+WHO WE ARE
+</div>
+
+<h3>
+Execution You Can Trust.<br>
+Results You Can See.
+</h3>
+
+<p>
+TRIVEXA SPACES is a Hyderabad-based interior execution and vendorship company delivering professional residential interior solutions.
+</p>
+
+<p>
+From modular installation to civil, electrical, false ceiling, painting and final finishing — we provide reliable site execution with strong coordination and quality control.
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<strong>5+</strong>
+<small>Years Experience</small>
+</div>
+
+<div class="stat">
+<strong>120+</strong>
+<small>Residential Projects</small>
+</div>
+
+<div class="stat">
+<strong>360°</strong>
+<small>Execution Support</small>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="wrap">
+
+<div class="section-title">
+
+<div class="label">
+WHAT WE DO
+</div>
+
+<h2>
+Complete Interior Execution
+</h2>
+
+<p>
+One reliable execution partner for residential interior requirements.
+</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="service">
+<div class="icon">▦</div>
+<h3>Modular Installation</h3>
+<p>
+Kitchens, wardrobes, storage units and custom furniture installation with professional finishing.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">⌂</div>
+<h3>Civil Works</h3>
+<p>
+Site modifications, masonry, flooring, wall preparation and other civil requirements.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">⚡</div>
+<h3>Electrical</h3>
+<p>
+Electrical points, fixtures, appliance connections and installation support.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">◇</div>
+<h3>False Ceiling</h3>
+<p>
+False ceiling execution with lighting provisions and clean professional finishing.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">✦</div>
+<h3>Painting & Finishing</h3>
+<p>
+Painting, touch-ups, snag closure and final finishing works.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">◆</div>
+<h3>Turnkey Projects</h3>
+<p>
+Complete interior execution support from coordination to final handover.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="dark">
+
+<div class="wrap">
+
+<div class="section-title">
+
+<div class="label">
+OUR WORK
+</div>
+
+<h2>
+Selected Interior Projects
+</h2>
+
+<p>
+Premium residential interiors and execution references.
+</p>
+
+</div>
+
+
+<div class="portfolio">
+
+<div class="project large">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=90">
+</div>
+
+<div class="project small">
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=90">
+</div>
+
+<div class="project small">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=90">
+</div>
+
+<div class="project large">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=90">
+</div>
+
+<div class="project small">
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=90">
+</div>
+
+<div class="project small">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=90">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+<div class="wrap">
+
+<div class="section-title">
+
+<div class="label">
+OUR PROCESS
+</div>
+
+<h2>
+Simple. Professional. Reliable.
+</h2>
+
+<p>
+A structured workflow that keeps your project moving smoothly.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="step">
+<div class="number">01 — CONSULT</div>
+<h3>Understand</h3>
+<p>
+Review scope, drawings, site conditions and requirements.
+</p>
+</div>
+
+
+<div class="step">
+<div class="number">02 — PLAN</div>
+<h3>Plan</h3>
+<p>
+Coordinate manpower, materials, measurements and schedule.
+</p>
+</div>
+
+
+<div class="step">
+<div class="number">03 — EXECUTE</div>
+<h3>Execute</h3>
+<p>
+Professional site execution with regular quality checks.
+</p>
+</div>
+
+
+<div class="step">
+<div class="number">04 — DELIVER</div>
+<h3>Handover</h3>
+<p>
+Final finishing, snag closure and clean project handover.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="wrap">
+
+<h2>
+Let's Build Something Beautiful.
+</h2>
+
+<p>
+Looking for a reliable interior execution partner in Hyderabad?
+Let's discuss your upcoming project.
+</p>
+
+<a class="btn gold"
+href="https://wa.me/918123212285">
+START A CONVERSATION
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="dark">
+
+<div class="wrap">
+
+<div class="contact">
+
+<div>
+
+<div class="label">
+CONTACT
+</div>
+
+<h2>
+Have a Project in Mind?
+</h2>
+
+<p class="muted">
+Connect with TRIVEXA SPACES for interior execution, modular installation and turnkey requirements.
+</p>
+
+
+<div class="info">
+<span>Founder</span>
+<strong>Md Haneef Inamdar</strong>
+</div>
+
+<div class="info">
+<span>Founder WhatsApp</span>
+<strong>+91 81232 12285</strong>
+</div>
+
+<div class="info">
+<span>Co-Founder</span>
+<strong>Mukthyar Basha</strong>
+</div>
+
+<div class="info">
+<span>Co-Founder WhatsApp</span>
+<strong>+91 89711 08220</strong>
+</div>
+
+<div class="info">
+<span>Location</span>
+<strong>Hyderabad, Telangana</strong>
+</div>
+
+</div>
+
+
+<div class="form">
+
+<h3>
+Start Your Project
+</h3>
+
+<form onsubmit="sendWhatsApp(event)">
+
+<input
+id="name"
+type="text"
+placeholder="Your Name"
+required
+>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+required
+>
+
+<input
+id="project"
+type="text"
+placeholder="Project / Requirement"
+>
+
+<textarea
+id="message"
+placeholder="Tell us about your project"
+></textarea>
+
+<button type="submit">
+SEND ENQUIRY ON WHATSAPP
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="wrap footer">
+
+<strong>
+TRIVEXA SPACES
+</strong>
+
+<p>
+© 2026 TRIVEXA SPACES — Interior Execution & Vendorship Services.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/918123212285"
+>
+☏
+</a>
+
+
+<script>
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let project =
+document.getElementById("project").value;
+
+let message =
+document.getElementById("message").value;
+
+
+let text =
+"Hello TRIVEXA SPACES,%0A%0A" +
+"Name: " + name +
+"%0APhone: " + phone +
+"%0AProject: " + project +
+"%0ARequirement: " + message;
+
+
+window.open(
+"https://wa.me/918123212285?text=" + text,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
