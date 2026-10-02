@@ -339,8 +339,10 @@ font-size:14px;
 width:34px;
 height:34px;
 }
-
 .header-btn{
+display:none;
+}
+.nav .header-btn{
 display:none;
 }
 .mobile-menu-toggle{
@@ -360,6 +362,10 @@ position:absolute;
 top:60px;
 left:15px;
 right:15px;
+width:auto;
+height:auto;
+max-height:80vh;
+box-sizing:border-box;
 background:#0d0d0d;
 border:1px solid #292929;
 padding:15px;
@@ -370,6 +376,9 @@ z-index:9998;
 
 .menu.mobile-open{
 display:flex;
+flex-direction:column;
+width:auto;
+height:auto;
 }
 
 .menu a{
