@@ -232,7 +232,81 @@ width:32px;
 height:32px;
 fill:#fff;
   }
+.why-trivexa{
+background:#0d0d0d;
+padding:100px 0;
+}
 
+.why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.why-card{
+background:#111;
+border:1px solid #292929;
+padding:30px;
+min-height:220px;
+transition:.3s;
+}
+
+.why-card:hover{
+transform:translateY(-5px);
+border-color:#c9a45c;
+}
+
+.why-card strong{
+color:#c9a45c;
+font-size:12px;
+letter-spacing:2px;
+}
+
+.why-card h3{
+font-size:22px;
+margin:18px 0 10px;
+}
+
+.why-card p{
+color:#999;
+font-size:14px;
+line-height:1.7;
+}
+
+.process{
+background:#080808;
+padding:100px 0;
+}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:12px;
+}
+
+.process-card{
+border:1px solid #292929;
+padding:28px 22px;
+background:#111;
+}
+
+.process-card span{
+color:#c9a45c;
+font-size:12px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.process-card h3{
+font-size:18px;
+margin:20px 0 10px;
+}
+
+.process-card p{
+color:#999;
+font-size:13px;
+line-height:1.6;
+}
 @media(max-width:900px){
 .menu{display:none}
 .about-grid,.partnership-layout,.contact{grid-template-columns:1fr}
